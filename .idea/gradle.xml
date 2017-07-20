@@ -8,6 +8,7 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/BuildItBiggerBackend" />
             <option value="$PROJECT_DIR$/app" />
             <option value="$PROJECT_DIR$/displayjokeandroidlib" />
             <option value="$PROJECT_DIR$/tellmejokejavalib" />
@@ -16,6 +17,7 @@
         <option name="myModules">
           <set>
             <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/BuildItBiggerBackend" />
             <option value="$PROJECT_DIR$/app" />
             <option value="$PROJECT_DIR$/displayjokeandroidlib" />
             <option value="$PROJECT_DIR$/tellmejokejavalib" />
