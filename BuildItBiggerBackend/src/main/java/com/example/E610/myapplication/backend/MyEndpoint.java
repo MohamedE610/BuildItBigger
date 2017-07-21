@@ -6,6 +6,8 @@
 
 package com.example.E610.myapplication.backend;
 
+import com.example.Joke;
+import com.example.TellMeJoke;
 import com.google.api.server.spi.config.Api;
 import com.google.api.server.spi.config.ApiMethod;
 import com.google.api.server.spi.config.ApiNamespace;
@@ -29,6 +31,17 @@ public class MyEndpoint {
     public MyBean sayHi(@Named("name") String name) {
         MyBean response = new MyBean();
         response.setData("Hi, " + name);
+
+        return response;
+    }
+
+    @ApiMethod(name = "returnJokeFromServer")
+    public MyBean returnJokeFromServer() {
+
+        MyBean response = new MyBean();
+        TellMeJoke tellMeJoke=new TellMeJoke();
+        Joke joke=tellMeJoke.tell();
+        response.setData(joke.getJokeString());
 
         return response;
     }

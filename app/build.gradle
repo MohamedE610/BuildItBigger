@@ -2,7 +2,7 @@ apply plugin: 'com.android.application'
 
 android {
     compileSdkVersion 25
-    buildToolsVersion "25"
+    buildToolsVersion "26.0.0"
 
     defaultConfig {
         applicationId "com.udacity.gradle.builditbigger"
@@ -32,7 +32,7 @@ dependencies {
     })
     compile project(':tellmejokejavalib')
     compile project(':displayjokeandroidlib')
+    compile project(path: ':BuildItBiggerBackend', configuration: 'android-endpoints')
     compile 'com.android.support:appcompat-v7:26.0.0-alpha1'
     compile 'com.google.android.gms:play-services-ads:10.2.6'
-    compile project(path: ':BuildItBiggerBackend', configuration: 'android-endpoints')
 }
