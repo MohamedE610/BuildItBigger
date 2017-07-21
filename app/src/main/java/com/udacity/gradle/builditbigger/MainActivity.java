@@ -171,6 +171,7 @@ class EndpointsAsyncTask extends AsyncTask<Context, Void, String> {
         } catch (IOException e) {
             Log.d("zzz",e.getMessage());
             Log.d("zzzz",e.getLocalizedMessage());
+            Log.e("asd",e.getMessage(),e);
             return e.getMessage();
         }
     }
