@@ -15,6 +15,7 @@ import android.widget.Toast;
 import com.example.Joke;
 import com.example.TellMeJoke;
 import com.example.displayjokeandroidlib.JokeActivity;
+
 import com.example.e610.myapplication.backend.myApi.MyApi;
 import com.google.api.client.extensions.android.http.AndroidHttp;
 import com.google.api.client.extensions.android.json.AndroidJsonFactory;
@@ -164,7 +165,6 @@ class EndpointsAsyncTask extends AsyncTask<Context, Void, String> {
         }
 
         context = params[0];
-
 
         try {
             return myApiService.returnJokeFromServer().execute().getData();

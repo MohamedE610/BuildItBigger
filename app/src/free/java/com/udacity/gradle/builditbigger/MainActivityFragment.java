@@ -7,6 +7,7 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Toast;
 
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.AdView;
@@ -30,6 +31,8 @@ public class MainActivityFragment extends Fragment {
                 Settings.Secure.ANDROID_ID);
 
         Log.d("haha",android_id_device);
+
+        Toast.makeText(getContext(),"Free", Toast.LENGTH_LONG).show();
 
         AdView mAdView = (AdView) root.findViewById(R.id.adView);
         // Create an ad request. Check logcat output for the hashed device ID to
