@@ -90,7 +90,20 @@ public class TellMeJoke {
     }
 
 
+/*
+ this method was return  ArrayList<Joke> and I received this object an deal with it as ArrayList<Joke> like pass it
+  through callbacks and casting it from Object to ArrayList<Joke>  but  when i  get any joke from it i get
+  this error  " java.lang.ClassCastException: com.google.api.client.util.ArrayMap cannot be cast to com.example.Joke "
+  and in other time get other "java.lang.ClassCastException: java.lang.String cannot be cast to com.example.Joke"
+  from the same situation "when i try get joke from ArrayList<Joke>" and when i debug this i note that
+  the actual type(heap) of  ArrayList<Joke> object  is ArrayMap with (key,value) and reference type (stack) is  ArrayList<Joke>
+  I really don't understand what is the reason of this problem
+  and when i change it to ArrayList<String> everything goes well
+ please help me to understand the problem's reason and  if i said any wrong information please tell me  right one
 
+ I appreciate that , thanks.
+
+* */
     public ArrayList<String> getJokes(){
 
         ArrayList<String> strings=new ArrayList<>();
