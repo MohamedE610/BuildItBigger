@@ -1,5 +1,7 @@
 package com.example;
 
+import java.io.Serializable;
+
 /**
  * Created by E610 on 7/19/2017.
  */

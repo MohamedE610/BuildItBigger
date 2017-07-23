@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.ShowAllJokesActivity"
+    android:background="#39352a">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/jokes"
+        android:textSize="35dp"
+        android:textAlignment="center"
+        android:background="#ded7a5"
+        android:textColor="#000000"
+        android:textStyle="bold|italic"
+        android:id="@+id/textView1"
+        android:layout_marginBottom="3dp"
+        android:layout_centerHorizontal="true"
+        />
+    <!-- TODO: Update blank fragment layout -->
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/jokes_recyclerView"
+        android:layout_below="@+id/textView1"/>
+
+</RelativeLayout>

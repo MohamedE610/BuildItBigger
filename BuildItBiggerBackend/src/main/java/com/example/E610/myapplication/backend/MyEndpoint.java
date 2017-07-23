@@ -12,6 +12,8 @@ import com.google.api.server.spi.config.Api;
 import com.google.api.server.spi.config.ApiMethod;
 import com.google.api.server.spi.config.ApiNamespace;
 
+import java.util.ArrayList;
+
 import javax.inject.Named;
 
 /** An endpoint class we are exposing */
@@ -35,13 +37,24 @@ public class MyEndpoint {
         return response;
     }
 
-    @ApiMethod(name = "returnJokeFromServer")
+    @ApiMethod(name = "getJokeFromServer")
     public MyBean returnJokeFromServer() {
 
         MyBean response = new MyBean();
         TellMeJoke tellMeJoke=new TellMeJoke();
         Joke joke=tellMeJoke.tell();
         response.setData(joke.getJokeString());
+
+        return response;
+    }
+
+    @ApiMethod(name = "getAllJokesFromServer")
+    public MyBean getAllJokesFromServer() {
+
+        MyBean response = new MyBean();
+        TellMeJoke tellMeJoke=new TellMeJoke();
+        ArrayList<String> jokes=tellMeJoke.getJokes();
+        response.setData(jokes);
 
         return response;
     }

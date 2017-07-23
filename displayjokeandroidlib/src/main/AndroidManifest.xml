@@ -1,16 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.displayjokeandroidlib">
-
     -- android:allowBackup="true"--
     -- android:supportsRtl="true"--
-    <application
-        android:label="@string/app_name">
-
-        <activity android:name=".JokeActivity">
-
-        </activity>
-
+    <application android:label="@string/app_name">
+        <activity android:name=".Activities.JokeActivity"></activity>
+        <activity android:name=".Activities.ShowAllJokesActivity"></activity>
     </application>
 
 </manifest>
